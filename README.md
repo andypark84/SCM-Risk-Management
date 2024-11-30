@@ -35,7 +35,8 @@ In this Supply Chain Analysis, the following key questions are addressed:
 
 ## Results
 1) Model Comparison:
-Gradient Boosting achieved the highest accuracy of 71%. KNN and Naive Bayes underperformed due to limited adaptability to non-linear relationships in the data.
+- Gradient Boosting achieved the highest accuracy of 71%.
+- KNN and Naive Bayes underperformed due to limited adaptability to non-linear relationships in the data.
 
 2) Feature Importance:
 Shipping mode and order status were the most critical predictors, contributing significantly to model performance.
