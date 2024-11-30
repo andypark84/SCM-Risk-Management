@@ -1,73 +1,48 @@
 # Delivery Risk Management for Supply Chains
 
-## Overview
-This project analyzes supply chain delivery risks using data-driven approaches and machine learning models. By exploring customer demographics, shipping logistics, and profitability, the analysis aims to identify late delivery risk factors and enhance supply chain efficiency.
+## Abstract
+Predicting delivery risks in supply chains is critical for ensuring timely and cost-effective operations. This study analyzed key features influencing delivery risks, such as shipping mode, order status, and order region, to develop robust predictive models. Gradient Boosting was identified as the most effective model, achieving a 71% accuracy rate. The project emphasized the importance of feature engineering, preprocessing, and rigorous evaluation in supply chain analytics.
 
 ---
-
-## Dataset
-The analysis is based on the **DataCo Supply Chain Dataset**, a simulated dataset commonly used for supply chain analysis.
-
 ## Analysis Questions
 In this Supply Chain Analysis, the following key questions are addressed:
 
-1. **How do different customer segments and demographics influence profitability and sales volume?**
+1) **How do different customer segments and demographics influence profitability and sales volume?**
    - By examining customer segments (e.g., region, demographics), high-value segments are identified to tailor marketing strategies and optimize resource allocation based on profitability potential.
 
-2. **Which predictive model performs best in predicting late delivery risk?**
+2) **Which predictive model performs best in predicting late delivery risk?**
    - This analysis evaluates multiple predictive models to determine the model with the highest accuracy for predicting late delivery risks. The best-performing model ensures reliable predictions, aiding logistics planning and operations.
 
-3. **What are the most significant factors contributing to late delivery risk?**
+3) **What are the most significant factors contributing to late delivery risk?**
    - By identifying key factors driving delivery risks, this analysis provides insights for targeted improvements in shipping processes to reduce delays and enhance overall supply chain efficiency.
 
 ---
+##  Dataset and Methods
+1) Dataset:
+Features analyzed: Shipping mode, order status, order region, and order quantity
+Target variable: Delivery risk (binary classification: high vs. low risk).
 
-## Key Features for Delivery Risk Prediction
-The following features were selected based on their relevance and impact on delivery risks:
+2) Preprocessing:
+Consolidation of low-frequency categories to improve model robustness.
+Scaling of numerical features using Standard Scaling normalization.
+Dropping unnecessary columns.
 
-1. **Days for shipping (real)** & **Days for shipment (scheduled)**:
-   - The difference between actual and scheduled shipping days directly impacts delivery delays.
-
-2. **Benefit per order**:
-   - High profit per order may influence prioritization, as higher-value orders are often expedited, potentially reducing delay risks.
-
-3. **Sales per customer**:
-   - Indicates customer value and repeat purchase frequency. High-value customers may receive priority, affecting delivery timelines.
-
-4. **Delivery Status**:
-   - Historical delivery patterns help predict future delivery delays.
-
-5. **Late_delivery_risk**:
-   - Previous risk flags allow the model to recognize recurring patterns of delays.
-
-6. **Order Item Discount Rate**:
-   - High discounts might deprioritize certain orders, increasing delivery times.
-
-7. **Order Item Quantity**:
-   - Larger quantities may require additional handling, which can increase delays.
-
-8. **Order Region** & **Market**:
-   - Location-related logistical complexities can impact delivery time.
-
-9. **Shipping Mode**:
-   - Express shipping modes typically reduce delays compared to standard modes.
-
-10. **Product Category Id** & **Department Name**:
-    - Specific categories or departments may require special handling, affecting delivery speed.
+3) Models Evaluated:
+Machine Learning: Gradient Boosting, AdaBoost, XGBoost, Logistic Regression, Naive Bayes, Random Forest, Decision Tree, K-Nearest Neighbors (KNN).
+Feature selection applied to all models.
 
 ---
 
-## Project Highlights
-1. **Preprocessing**:
-   - Dropping unnecessary columns
-   - Consolidating Low-Frequency Categories into 'Other'
-     
-2. **Exploratory Data Analysis (EDA)**:
-   - Visualized customer demographics and shipping patterns.
-   - Identified correlations between delivery delays and order attributes.
+## Results
+1) Model Comparison:
+Gradient Boosting achieved the highest accuracy of 71%. KNN and Naive Bayes underperformed due to limited adaptability to non-linear relationships in the data.
 
-3. **Machine Learning Models**:
-   - Built and evaluated models including Gradient Boosting, AdaBoost, XGBoost, Logistic Regression, Naive Bayes, Random Forest, Decision Tree, and KNN.
-   - Compared model performances to select the best predictor of late delivery risks.
+2) Feature Importance:
+Shipping mode and order status were the most critical predictors, contributing significantly to model performance.
 
+3) Model Evaluation Metrics(Gradient Boosting):
+- Accuracy: 71%
+- Precision: 76%
+- Recall: 71%
+- F1 Score: 70%
 
