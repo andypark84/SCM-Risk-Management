@@ -39,7 +39,7 @@ In this Supply Chain Analysis, the following key questions are addressed:
 - KNN and Naive Bayes underperformed due to limited adaptability to non-linear relationships in the data.
 
 2) Feature Importance:
-Shipping mode and order status were the most critical predictors, contributing significantly to model performance.
+'Shipping mode' and 'order status' were the most critical predictors, contributing significantly to model performance.
 
 3) Model Evaluation Metrics(Gradient Boosting):
 - Accuracy: 71%
