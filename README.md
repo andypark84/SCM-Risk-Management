@@ -19,17 +19,17 @@ In this Supply Chain Analysis, the following key questions are addressed:
 ---
 ##  Dataset and Methods
 1) Dataset:
-Features analyzed: Shipping mode, order status, order region, and order quantity
-Target variable: Delivery risk (binary classification: high vs. low risk).
+- Features analyzed: Shipping mode, order status, order region, and order quantity
+- Target variable: Delivery risk (binary classification: high vs. low risk).
 
 2) Preprocessing:
-Consolidation of low-frequency categories to improve model robustness.
-Scaling of numerical features using Standard Scaling normalization.
-Dropping unnecessary columns.
+- Consolidation of low-frequency categories to improve model robustness.
+- Scaling of numerical features using Standard Scaling normalization.
+- Dropping unnecessary columns.
 
 3) Models Evaluated:
-Machine Learning: Gradient Boosting, AdaBoost, XGBoost, Logistic Regression, Naive Bayes, Random Forest, Decision Tree, K-Nearest Neighbors (KNN).
-Feature selection applied to all models.
+- Machine Learning: Gradient Boosting, AdaBoost, XGBoost, Logistic Regression, Naive Bayes, Random Forest, Decision Tree, K-Nearest Neighbors (KNN).
+- Feature selection applied to all models.
 
 ---
 
