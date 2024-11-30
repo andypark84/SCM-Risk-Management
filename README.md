@@ -19,31 +19,31 @@ In this Supply Chain Analysis, the following key questions are addressed:
 ---
 ##  Dataset and Methods
 1) Dataset:
-- Features analyzed: Shipping mode, order status, order region, and order quantity
-- Target variable: Delivery risk (binary classification: high vs. low risk).
+   - Features analyzed: Shipping mode, order status, order region, and order quantity
+   - Target variable: Delivery risk (binary classification: high vs. low risk).
 
 2) Preprocessing:
-- Consolidation of low-frequency categories to improve model robustness.
-- Scaling of numerical features using Standard Scaling normalization.
-- Dropping unnecessary columns.
+   - Consolidation of low-frequency categories to improve model robustness.
+   - Scaling of numerical features using Standard Scaling normalization.
+   - Dropping unnecessary columns.
 
 3) Models Evaluated:
-- Machine Learning: Gradient Boosting, AdaBoost, XGBoost, Logistic Regression, Naive Bayes, Random Forest, Decision Tree, K-Nearest Neighbors (KNN).
-- Feature selection applied to all models.
+   - Machine Learning: Gradient Boosting, AdaBoost, XGBoost, Logistic Regression, Naive Bayes, Random Forest, Decision Tree, K-Nearest Neighbors (KNN).
+   - Feature selection applied to all models.
 
 ---
 
 ## Results
 1) Model Comparison:
-- Gradient Boosting achieved the highest accuracy of 71%.
-- KNN and Naive Bayes underperformed due to limited adaptability to non-linear relationships in the data.
+   - Gradient Boosting achieved the highest accuracy of 71%.
+   - KNN and Naive Bayes underperformed due to limited adaptability to non-linear relationships in the data.
 
 2) Feature Importance:
-'Shipping mode' and 'order status' were the most critical predictors, contributing significantly to model performance.
+   - 'Shipping mode' and 'order status' were the most critical predictors, contributing significantly to model performance.
 
 3) Model Evaluation Metrics(Gradient Boosting):
-- Accuracy: 71%
-- Precision: 76%
-- Recall: 71%
-- F1 Score: 70%
+   - Accuracy: 71%
+   - Precision: 76%
+   - Recall: 71%
+   - F1 Score: 70%
 
