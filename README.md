@@ -1,7 +1,14 @@
 # Delivery Risk Management for Supply Chains
 
 ## Abstract
-Predicting delivery risks in supply chains is critical for ensuring timely and cost-effective operations. This study analyzed key features influencing delivery risks, such as shipping mode, order status, and order region, to develop robust predictive models. Gradient Boosting was identified as the most effective model, achieving a 71% accuracy rate. The project emphasized the importance of feature engineering, preprocessing, and rigorous evaluation in supply chain analytics.
+- **Objectvie**: Predicting delivery risks in supply chains is critical for 
+ensuring timely and cost-effective operations. This study analyzed key 
+features influencing delivery risks, such as shipping mode, order 
+status, and order region, to develop robust predictive models. 
+- **Results**: Gradient Boosting was identified as the most effective model, 
+achieving a 71% accuracy rate. The project emphasized the 
+importance of feature engineering, preprocessing, and rigorous 
+evaluation in supply chain analytics.
 
 ---
 ## Analysis Questions
@@ -18,21 +25,19 @@ In this Supply Chain Analysis, the following key questions are addressed:
 
 ---
 ##  Dataset and Methods
-1) Dataset:
-   - Features analyzed: Shipping mode, order status, order region, and order quantity
-   - Target variable: Delivery risk (binary classification: high vs. low risk).
-
-2) Preprocessing:
-   - Consolidation of low-frequency categories to improve model robustness.
-   - Scaling of numerical features using Standard Scaling normalization.
-   - Dropping unnecessary columns.
-
-3) Models Evaluated:
-   - Machine Learning: Gradient Boosting, AdaBoost, XGBoost, Logistic Regression, Naive Bayes, Random Forest, Decision Tree, K-Nearest Neighbors (KNN).
-   - Feature selection applied to all models.
+1) Dataset (Dimension 180519 rows x 53 features) 
+ • Features analyzed: Shipping mode, order status, order region, and 
+order quantity
+ • Target variable: Delivery risk (binary classification: high vs. low risk)
+2) Preprocessing
+ • Consolidation of low-frequency categories to improve model robustness. Among the categorical variables, category name(category_name) and department name(department_name) exhibited the highest number of unique values, making them critical for this preprocessing. 
+ • Scaling of numerical features using Standard Scaling normalization.
 
 ---
-
+##  Methodology
+1) Pearson Correlation: Pearson correlation analysis was conducted to identify highly correlated variables. Features with strong correlations were carefully examined, and redundant variables were removed to address multicollinearity and enhance model performance.
+2) Machine Learning Models: The machine learning models utilized in this project include Gradient Boosting, AdaBoost, XGBoost, Logistic Regression, Naive Bayes, Random Forest, Decision Tree, K-Nearest Neighbors (KNN).
+---
 ## Results
 1) Model Comparison:
    - Gradient Boosting achieved the highest accuracy of 71%.
@@ -41,7 +46,7 @@ In this Supply Chain Analysis, the following key questions are addressed:
 2) Feature Importance:
    - 'Shipping mode' and 'order status' were the most critical predictors, contributing significantly to model performance.
 
-3) Model Evaluation Metrics(Gradient Boosting):
+3) Final Model: Gradient Boosting
    - Accuracy: 71%
    - Precision: 76%
    - Recall: 71%
