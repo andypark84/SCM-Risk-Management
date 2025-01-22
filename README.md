@@ -25,13 +25,13 @@ In this Supply Chain Analysis, the following key questions are addressed:
 
 ---
 ##  Dataset and Methods
-1) Dataset (Dimension 180519 rows x 53 features) 
- • Features analyzed: Shipping mode, order status, order region, and 
+1) Dataset (Dimension 180519 rows x 53 features)
+   - Features analyzed: Shipping mode, order status, order region, and 
 order quantity
- • Target variable: Delivery risk (binary classification: high vs. low risk)
+   - Target variable: Delivery risk (binary classification: high vs. low risk)
 2) Preprocessing
- • Consolidation of low-frequency categories to improve model robustness. Among the categorical variables, category name(category_name) and department name(department_name) exhibited the highest number of unique values, making them critical for this preprocessing. 
- • Scaling of numerical features using Standard Scaling normalization.
+   - Consolidation of low-frequency categories to improve model robustness. Among the categorical variables, category name(category_name) and department name(department_name) exhibited the highest number of unique values, making them critical for this preprocessing. 
+   - Scaling of numerical features using Standard Scaling normalization.
 
 ---
 ##  Methodology
